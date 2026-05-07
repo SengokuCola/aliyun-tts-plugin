@@ -1,0 +1,29 @@
+[plugin]
+enabled = true
+config_version = "1.0.0"
+
+[tts]
+api_key = ""
+endpoint = "https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation"
+realtime_endpoint = "wss://dashscope.aliyuncs.com/api-ws/v1/realtime"
+use_realtime = true
+model = "qwen3-tts-instruct-flash-realtime"
+voice = "Sunny"
+audio_format = "wav"
+sample_rate = 24000
+volume = 35
+rate = 1.0
+pitch = 1.0
+timeout_seconds = 60
+max_text_length = 300
+enable_markdown_filter = true
+enable_aigc_tag = false
+enable_auto_instruction = true
+default_scene = "闲聊对话"
+default_emotion = "happy"
+enable_noise = true
+noise_level = 0.003
+
+[tools]
+enable_send_tts_voice = true
+enable_tts_test_command = true

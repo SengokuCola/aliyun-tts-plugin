@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "阿里云百炼 TTS 插件 (Aliyun Bailian TTS Plugin)",
+  "description": "通过阿里云百炼 CosyVoice 接口将文本合成为语音，并发送到当前会话。",
+  "author": {
+    "name": "SengokuCola",
+    "url": "https://github.com/SengokuCola"
+  },
+  "license": "MIT",
+  "urls": {
+    "repository": "https://github.com/SengokuCola/aliyun-tts-plugin",
+    "homepage": "https://github.com/SengokuCola/aliyun-tts-plugin",
+    "documentation": "https://help.aliyun.com/zh/model-studio/non-realtime-cosyvoice-api",
+    "issues": "https://github.com/SengokuCola/aliyun-tts-plugin/issues"
+  },
+  "host_application": {
+    "min_version": "1.0.0",
+    "max_version": "1.0.0"
+  },
+  "sdk": {
+    "min_version": "2.4.0",
+    "max_version": "2.99.99"
+  },
+  "dependencies": [
+    {
+      "type": "python_package",
+      "name": "aiohttp",
+      "version_spec": ">=3.12.14"
+    }
+  ],
+  "capabilities": [
+    "send.custom"
+  ],
+  "i18n": {
+    "default_locale": "zh-CN",
+    "locales_path": "_locales",
+    "supported_locales": [
+      "zh-CN"
+    ]
+  },
+  "id": "sengokucola.aliyun-tts-plugin"
+}
